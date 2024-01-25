@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <h1>Full Name Display</h1>
-      <form >
+      <form onSubmit={handleSubmit}>
         <div>
           <div>
         First Name:
@@ -32,8 +32,10 @@ function App() {
         />
         </div>
         <div>
-        <button onSubmit={handleSubmit}>Submit</button>
+        <button type="submit">Submit</button>
         </div>
+        </div>
+        <div>
         <p>{fullName}</p>
         </div>
       </form>
